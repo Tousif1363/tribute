@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+	==========================================
+	Custom Styles
+	==========================================
+*/
+
+body {
+	background: #06403A;
+	color: #12BFAE;
+	font: 300 16px/22px "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+	color: #0C7F74;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
+}
+
+.lead-image img{
+	width: 100%;
+}
+
+#tribute iframe {
+	display: block;
+	margin: 0 auto 44px auto;
+}
+
+q {
+	color: #000;
+	font-weight: 400;
+}
+
+#quotes p{
+	margin: 44px 0;
+	text-align: justify;
+}
+
+#quotes p:nth-child(even) {
+    border-left: 4px solid #000;
+    padding-left: 20px;
+}
+
+#quotes p:nth-child(odd) {
+    border-right: 4px solid #000;
+    padding-right: 20px;
+}
+
+/*
+	==========================================
+	Links
+	==========================================
+*/
+
+a:hover {
+	color: #15E5D1;
+}
+
+a {
+	color: #0C7F74;
+	text-decoration: none;
+}
+
+.primary-header a,
+.primary-footer a {
+	color: #fff;
+}
+
+.primary-header a:hover,
+.primary-footer a:hover {
+	color: #0C7F74;
+}
+
+/*
+	==========================================
+	Grid
+	==========================================
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container ,
+.grid {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.container {
+	padding: 0 30px;
+}
+
+.col-1-3 {
+	width: 33%;
+}
+
+.col-2-3 {
+	width: 66.66%;
+}
+
+.col-1-2 {
+	width: 50%;
+}
+
+.col-1-3, 
+.col-2-3,
+.col-1-2 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3,
+.col-1-2 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row {
+	background: #fff;
+	min-width: 960;
+	padding: 11px 0;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h3, h4, h5 {
+	margin-bottom: 22px;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.hero {
+	color: #fff;
+	text-align: center;
+	line-height: 44px;
+	padding: 22px 80px 66px 80px;
+}
+
+.hero h2 {
+	font-size: 36px;
+}
+
+.hero p {
+	font-size: 24px;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:before {
+	clear: both;
+}
+
+.group:after {
+	clear: both;
+	*zoom: 1;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+	color: #fff;
+	float: left;
+	font-size: 48px;
+  	line-height: 44px;
+	border-top: 8px solid #00B261;
+	padding: 44px 0 22px 0;
+	text-transform: uppercase;
+}
+
+.tagline {
+	text-align: right;
+	margin: 66px 0 22px 0;
+}
+
+.primary-nav {
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer small {
+	float: left;
+	font-weight: 400;
+}
+
+.primary-footer {
+	color: #0C7F74;
+	font-size: 14px;
+	padding-top: 44px;
+	padding-bottom: 44px;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+	text-align: right;
+}
+
+.nav li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+}
+
+.nav li:last-child {
+	margin-right: 0;
+}
